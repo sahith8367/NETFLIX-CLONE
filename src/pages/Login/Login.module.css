@@ -68,10 +68,12 @@
 .form_switch{
     margin-top: 40px;
     color: #737373;
+    font-size: 14px;
 }
 .form_switch span{
     margin-left: 6px;
     color :white;
     font-weight: 500;
     cursor: pointer;
+    text-decoration: underline;
 }
