@@ -30,9 +30,9 @@ const Home = () => {
           </div>
         </div>
         <div className={Styles.more_cards}>
-          <Titlecards title={"Blockbuster Movies"}/>
-          <Titlecards title={"Only on Netflix"}/>
-          <Titlecards title={"Upcomming"}/>
+          <Titlecards title={"Blockbuster Movies"} category={"popular"}/>
+          <Titlecards title={"Only on Netflix"} category={"top_rated"}/>
+          <Titlecards title={"Upcomming"} category={"upcoming"}/>
           <Titlecards title={"Top Movies For You"}/>
         </div>
 
