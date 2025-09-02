@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Styles from './Titlecards.module.css'
 import cards_data from '../../assets/cards/Cards_data'
+import { Link } from 'react-router-dom';
 
 const Titlecards = (props) => {
   const cardsRef = useRef();
@@ -30,10 +31,10 @@ const Titlecards = (props) => {
       <h1>{props.title?props.title:"Popular on Netflix"}</h1>
       <div className={Styles.card_list} ref={cardsRef}>
         {apiData.map((card , i)=>{
-          return <div className={Styles.card} key={i}>
+          return <Link to={`/player/${card.id}`} className={Styles.card} key={i}>
             <img src={`https://image.tmdb.org/t/p/w500`+card.backdrop_path} alt="" />
             <p>{card.original_title}</p>
-          </div>
+          </Link>
         })}
       </div>
     </div>

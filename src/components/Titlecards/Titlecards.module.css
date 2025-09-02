@@ -21,6 +21,8 @@
 }
 .card{
     position: relative;
+    text-decoration: none;
+    color: white;
 }
 .card p{
     position: absolute;
